@@ -34,7 +34,7 @@ The course develops the knowledge and hands-on skills required to install, confi
 
 ## Tools and Technologies
 
-- Ubuntu Server LTS
+- Ubuntu Server 26.04.1 LTS
 - Oracle VirtualBox
 - Windows 11 (host operating system)
 - Linux Command-Line Interface (CLI)
@@ -44,11 +44,13 @@ The course develops the knowledge and hands-on skills required to install, confi
 
 | Activity | Status |
 |---|---|
-| Install Oracle VirtualBox | Completed (reported) |
-| Install Ubuntu Server | Completed (reported) |
-| Record VM configuration and Ubuntu release | Pending verification |
-| Verify Ubuntu login and network connectivity | Pending |
-| Practise essential Linux commands | Upcoming |
+| Install Oracle VirtualBox | Completed |
+| Install Ubuntu Server | Completed |
+| Configure virtual machine resources | Verified: 4 GB RAM, 2 processors, 30 GB virtual disk |
+| Verify Ubuntu release | Verified: Ubuntu 26.04.1 LTS |
+| Verify network interface and IP | Verified: NAT interface enp0s3, IPv4 10.0.2.15 |
+| Update installed packages | Update/configuration process shown in terminal; further update verification recommended |
+| Practise essential Linux commands | In progress |
 | User and group administration | Upcoming |
 | File permissions and ownership | Upcoming |
 | Server services, monitoring, and troubleshooting | Upcoming |
@@ -61,11 +63,9 @@ Each lab records its objective, environment, tools, procedure, commands, evidenc
 
 - [Lab 01: VirtualBox and Ubuntu Server Installation](./Installation/virtualbox-ubuntu-server-installation.md)
 
-The installation is recorded as completed based on my progress update. Exact VM settings and successful system checks will be added after verification.
-
 ## Evidence and Screenshots
 
-Screenshots and other evidence will be added to the relevant topic folders after review. Sensitive information such as passwords, private keys, tokens, and personal data must not be included.
+Installation and verification screenshots have been reviewed in the learning session. Repository image files are still to be added to the Screenshots folder. Sensitive information such as passwords, private keys, tokens, and personal data must not be included.
 
 ## Career Relevance
 
