@@ -2,8 +2,8 @@
 
 ## Status
 
-**Completed:** Initial software installation, as reported during the learning session.  
-**Evidence:** Screenshots are pending review and upload.
+**Completed and visually verified:** VirtualBox VM setup, Ubuntu Server boot/login, Ubuntu release, and NAT network interface.  
+**Evidence:** Screenshots supplied and reviewed during the learning session. Repository image files are still to be added.
 
 ## Objective
 
@@ -15,79 +15,98 @@ Set up a virtualised Linux server environment on a Windows computer so that I ca
 - Computer memory: 16 GB RAM
 - Processor: Intel Core i5
 - Virtualisation software: Oracle VirtualBox
-- Guest operating system: Ubuntu Server
+- Guest operating system: Ubuntu Server 26.04.1 LTS
 
 ## Work Completed
 
 - Installed Oracle VirtualBox.
-- Installed Ubuntu Server for the practical learning environment.
+- Created and started an Ubuntu Server virtual machine.
+- Reached the Ubuntu terminal and logged in successfully.
+- Ran the Ubuntu release and network-interface checks.
+- Captured screenshots of the VM overview and terminal output.
 
-## Configuration Record
+## Verified Virtual Machine Configuration
 
-The exact virtual machine configuration has not yet been recorded. The following details will be confirmed from the VirtualBox settings and Ubuntu system information:
-
-| Item | Recorded value |
+| Item | Verified value |
 |---|---|
-| Ubuntu Server release | To be confirmed |
-| Virtual machine name | To be confirmed |
-| Allocated memory (RAM) | To be confirmed |
-| Allocated processors | To be confirmed |
-| Virtual disk size | To be confirmed |
-| Network attachment mode | To be confirmed |
-| OpenSSH installation/status | To be confirmed |
+| Virtual machine name | Ubuntu Server 26.04 |
+| Guest OS release | Ubuntu 26.04.1 LTS |
+| Codename | Resolute |
+| Allocated memory (RAM) | 4096 MB (4 GB) |
+| Allocated processors | 2 |
+| Virtual disk | 30.00 GB, VDI |
+| Network attachment mode | NAT |
+| Network interface | enp0s3 |
+| IPv4 address | 10.0.2.15 (private NAT address) |
+| Login / terminal access | Successful |
 
-## Verification To Do
+The screenshots show the VM powered on and later powered off. The terminal shows a successful shell prompt and output from `lsb_release -a` and `ip addr`.
 
-The next step is to verify that Ubuntu boots correctly and collect basic system information. After logging in to the Ubuntu Server terminal, run:
+## Commands Practised
+
+Ubuntu release information:
 
 ```bash
 lsb_release -a
 ```
 
-```bash
-hostnamectl
-```
+Network interface information:
 
 ```bash
 ip addr
 ```
 
-```bash
-free -h
-```
+The release command reports:
 
-```bash
-df -h
-```
+- Distributor ID: Ubuntu
+- Description: Ubuntu 26.04.1 LTS
+- Release: 26.04
+- Codename: resolute
 
-Record the outputs (excluding sensitive information) and add screenshots as evidence.
+The network output shows the `enp0s3` interface in the UP state with IPv4 address `10.0.2.15/24`. This is consistent with a VirtualBox NAT network.
+
+## Configuration Note
+
+The VirtualBox overview identifies the guest operating-system profile as **Ubuntu 25.04 (Plucky Puffin) 64-bit**, while the installed guest reports **Ubuntu 26.04.1 LTS**. This is a VirtualBox profile-label mismatch, not evidence that the Ubuntu installation itself is incorrect. Review the VM's General settings and select the closest available Ubuntu 64-bit profile if VirtualBox offers a matching release.
+
+## Update / Maintenance Observation
+
+One terminal screenshot shows package configuration and service-restart messages, followed by a shell prompt. This indicates that package setup activity took place. A fresh `sudo apt update` and `sudo apt upgrade` should still be run and verified as part of the initial maintenance checklist.
 
 ## Screenshots
 
-Screenshots will be added here after review:
+The supplied evidence reviewed includes:
 
-- VirtualBox application / VM list
-- Ubuntu VM configuration (memory, CPU, storage)
-- Ubuntu Server installation or login screen
-- Ubuntu terminal showing successful login
-- Ubuntu version and system information
+- VirtualBox VM overview showing memory, processors, disk, and NAT.
+- Ubuntu Server terminal after package configuration.
+- Ubuntu release information.
+- Network interface and IPv4 address.
+- VirtualBox Manager home screen.
+
+The image files themselves still need to be committed to this repository under the `Screenshots/` directory.
 
 ## Challenges and Troubleshooting
 
-No installation problems have been documented yet. Any errors or fixes encountered during verification will be recorded here.
+- The command was initially entered as `lsb release -a`, which produced a command-not-found message. It was then corrected to `lsb_release -a`, which returned the Ubuntu release information successfully.
+- The VirtualBox guest OS profile label differs from the installed Ubuntu release. Review the profile setting as noted above.
 
 ## What I Learned
 
-This setup introduces the concept of virtualisation: VirtualBox runs Ubuntu Server as a guest operating system inside the Windows host. This provides an isolated practice environment for learning server administration.
+- VirtualBox allows Ubuntu Server to run as a guest operating system inside a Windows host.
+- The VM is configured with 4 GB RAM, 2 virtual processors, and a 30 GB virtual disk.
+- The NAT network provides the guest with a private IPv4 address.
+- `lsb_release -a` identifies the installed Ubuntu release.
+- `ip addr` displays network interfaces, their state, and assigned IP addresses.
 
 ## Next Steps
 
-1. Confirm Ubuntu Server starts and accepts login.
-2. Record the Ubuntu release and VM hardware settings.
-3. Verify network connectivity.
-4. Update package lists and apply available system updates.
-5. Begin the first Linux command-line and system administration exercises.
+1. Review the VirtualBox guest OS profile label.
+2. Run `sudo apt update` and `sudo apt upgrade`, then verify the result.
+3. Test connectivity with `ping -c 4 1.1.1.1` and `ping -c 4 ubuntu.com`.
+4. Check disk and memory usage with `df -h` and `free -h`.
+5. Confirm whether OpenSSH Server is installed and active.
+6. Begin the first Linux command-line and system administration exercises.
 
 ---
 
-*This log records only the installation work reported so far. Configuration values, test results, and screenshots will be added after they have been checked.*
+*Configuration values in this log are based on the supplied screenshots. Items not shown in the screenshots are not marked as verified.*
