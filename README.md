@@ -65,9 +65,8 @@ Each substantial lab or project should include:
 ## Contact
 
 - **Email:** [ibkolagunju01@gmail.com](mailto:ibkolagunju01@gmail.com)
+- **LinkedIn:** [linkedin.com/in/olagunju-ibukun-0083442aa](https://www.linkedin.com/in/olagunju-ibukun-0083442aa)
 - **GitHub:** [@ibk-tech-lab](https://github.com/ibk-tech-lab)
-
-*LinkedIn will be added once the correct public profile URL is confirmed.*
 
 ---
 
