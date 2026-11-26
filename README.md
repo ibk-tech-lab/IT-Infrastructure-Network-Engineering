@@ -1,59 +1,74 @@
 # IT Infrastructure & Network Engineering Portfolio
 
-Welcome! This repository documents my practical learning journey as I develop the technical skills required for a career in **Network Engineering** and **IT Infrastructure Engineering**.
+Welcome to my technical learning and project portfolio. I am building practical skills for a career in **Network Engineering and IT Infrastructure Engineering**, with a strong interest in cybersecurity and secure infrastructure.
 
-My focus is on building practical ability through guided study, virtual labs, troubleshooting, and documented projects—not simply completing courses.
+My approach is hands-on: learn the fundamentals, practise in virtual and network labs, troubleshoot problems, and document the results so that my work can be reviewed and reproduced.
 
-## About My Learning Journey
+## About Me
 
-I am developing skills in designing, configuring, administering, securing, and troubleshooting IT infrastructure and computer networks. Cybersecurity is also an area of interest that informs my approach to understanding and protecting networked systems.
+I am developing the skills required to support, configure, administer, secure, and troubleshoot computer networks and IT infrastructure. My current learning includes Linux and Ubuntu Server, networking fundamentals, virtualisation, and the tools used in modern IT environments.
 
-## Learning Roadmap
+**Career objective:** Network Engineer / IT Infrastructure Engineer  
+**Cybersecurity:** An additional area of professional interest  
+**Current study:** CCNA learning path and Linux / Ubuntu Server administration
 
-| Area | Topics and practical focus | Status |
-|---|---|---|
-| 01. Ubuntu Server Administration | Linux fundamentals, server installation, users, permissions, services, networking, and monitoring | In progress |
-| 02. Windows Server | Windows Server installation and administration | Planned |
-| 03. Active Directory | Domains, users, groups, Group Policy, and directory services | Planned |
-| 04. Bash Scripting | Linux task automation and administration scripts | Planned |
-| 05. Python Fundamentals | Programming fundamentals and practical IT scripts | Planned |
-| 06. Git and GitHub | Version control, repositories, and project collaboration | Planned |
-| 07. Virtualisation | Virtual machines and lab environment management | In progress |
-| 08. PowerShell | Windows administration and automation | Planned |
-| 09. Network Automation | Automating network operations and configuration tasks | Planned |
-| 10. Ansible | Configuration management and infrastructure automation | Planned |
+## Learning Progress
 
-## Current Focus: Ubuntu Server Administration
+| Learning area | Current status |
+|---|---|
+| Class 1 — Linux Architecture | Lesson completed |
+| Class 2 — Linux Terminal Navigation | Lesson completed |
+| Ubuntu Server lab environment | Installed and initial configuration documented |
+| CCNA / Networking fundamentals | In progress |
+| Windows Server | Planned |
+| Active Directory | Planned |
+| Bash scripting | Planned |
+| Python fundamentals | Planned |
+| Git and GitHub | In progress |
+| PowerShell | Planned |
+| Network automation / Ansible | Planned |
 
-I am beginning with Ubuntu Server in Oracle VirtualBox. This module will include installation, initial configuration, Linux command-line practice, user and group management, file permissions, networking, package management, service administration, monitoring, and troubleshooting.
+> Lesson completion records the learning milestone. Practical skills will be marked verified when the corresponding exercise, command output, or lab evidence is documented.
 
-See the [Ubuntu Server Administration module](./01-Ubuntu-Server-Administration/README.md) for its objectives and documentation approach.
+## Technical Areas
 
-## How Projects Are Documented
+- **Operating systems:** Ubuntu Server, Linux, Windows 11
+- **Virtualisation:** Oracle VirtualBox
+- **Networking:** TCP/IP fundamentals, IP addressing, network troubleshooting, Cisco Packet Tracer
+- **Version control:** Git and GitHub
+- **Developing skills:** Bash, Python, PowerShell, network automation
 
-For each lab or project, I aim to include:
+I distinguish between technologies I have used, topics I am currently learning, and future learning targets. This portfolio will be updated as I gain and demonstrate experience.
 
-1. **Objective** — the task or problem being addressed.
-2. **Environment and tools** — operating systems, software, and lab setup.
-3. **Implementation** — steps, commands, and configurations.
-4. **Evidence** — screenshots, diagrams, and relevant files.
-5. **Testing and results** — how I checked that the solution worked.
-6. **Challenges and troubleshooting** — issues encountered and their resolution.
-7. **Lessons learned** — key concepts and skills developed.
+## Featured Learning Portfolio
 
-## Tools and Technologies
+### 01 — Ubuntu Server Administration
+A practical lab documenting the setup and administration of an Ubuntu Server virtual machine using Oracle VirtualBox.
 
-- Ubuntu Server and Linux CLI
-- Oracle VirtualBox
-- Windows 11
-- Cisco Packet Tracer
-- Git and GitHub (learning and project documentation)
-- Python, Bash, and PowerShell (as covered in the roadmap)
+- [Ubuntu Server module](./01-Ubuntu-Server-Administration/README.md)
+- [Installation lab record](./01-Ubuntu-Server-Administration/Installation/virtualbox-ubuntu-server-installation.md)
+- [Class 1 — Linux Architecture](./01-Ubuntu-Server-Administration/Lessons/Class-01-Linux-Architecture.md)
+- [Class 2 — Terminal Navigation](./01-Ubuntu-Server-Administration/Lessons/Class-02-Terminal-Navigation.md)
 
-## Career Direction
+## How I Document Practical Work
 
-My primary career goal is to become a **Network Engineer or IT Infrastructure Engineer**, developing the ability to support and oversee reliable organisational network and IT infrastructure operations. Cybersecurity remains an important area of professional interest.
+Each substantial lab or project should include:
 
-## Progress
+1. Objective and problem statement
+2. Environment, topology, and tools
+3. Implementation steps and commands
+4. Screenshots, diagrams, and configuration files
+5. Tests, results, and verification
+6. Challenges and troubleshooting
+7. Lessons learned and possible improvements
 
-This portfolio is a work in progress. I will update it as I complete lessons, practical labs, troubleshooting exercises, and larger projects. Items marked as planned are learning targets, not completed skills or projects.
+## Contact
+
+- **Email:** [ibkolagunju01@gmail.com](mailto:ibkolagunju01@gmail.com)
+- **GitHub:** [@ibk-tech-lab](https://github.com/ibk-tech-lab)
+
+*LinkedIn will be added once the correct public profile URL is confirmed.*
+
+---
+
+This portfolio is actively maintained as I progress through my learning roadmap and build practical infrastructure and networking projects.
