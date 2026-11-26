@@ -19,6 +19,18 @@ The course develops the knowledge and hands-on skills required to install, confi
 9. Monitor system resources and troubleshoot common issues.
 10. Build practical server administration skills through lab exercises.
 
+
+## Lesson Progress
+
+| Class | Topic | Status |
+|---|---|---|
+| Class 1 | Linux Architecture | Completed |
+| Class 2 | Linux Terminal Navigation | Completed |
+
+Lesson notes:
+- [Class 1 — Linux Architecture](./Lessons/Class-01-Linux-Architecture.md)
+- [Class 2 — Terminal Navigation](./Lessons/Class-02-Terminal-Navigation.md)
+
 ## Practical Learning Areas
 
 - Ubuntu Server installation and initial configuration.
